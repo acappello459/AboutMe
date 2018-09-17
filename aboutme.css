@@ -17,6 +17,10 @@
 grid-column: 1/4;
 }
 
+a{
+  text-decoration: none;
+}
+
 .block{
   margin: 20px;
   padding-left: 20%;
@@ -40,7 +44,7 @@ grid-column: 1/2;
 
 .wrapper2{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .a{

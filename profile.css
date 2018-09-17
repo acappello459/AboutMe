@@ -35,6 +35,10 @@ p{
 	padding: 2px;
 }
 
+a{
+	text-decoration: none;
+}
+
 .picture{
 	background-image: url('images/v.jpeg');
 	height: 200px;
