@@ -11,17 +11,17 @@
 .navbar{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	/* text-decoration: none !important!; */
+	text-decoration: none !important;
 
 }
 
 .navbar p{
-	/* text-decoration: none !important; */
+	text-decoration: none !important;
 }
 p{
 	text-align: center;
 	padding: 5px;
-	/* text-decoration: none !important!; */
+	text-decoration: none !important;
 }
 
 
@@ -32,6 +32,7 @@ p{
 	/* background-color: green; */
 	border: 3px dotted green;
 	border-radius: 10px;
+	padding: 2px;
 }
 
 .picture{
@@ -53,6 +54,6 @@ p{
 @media all and (min-width: 482px) and (max-width: 992px){
 	.picture{
 		background-repeat: no-repeat;
-		padding-left: 50%;
+		/* padding-left: 50%; */
 	}
 }
