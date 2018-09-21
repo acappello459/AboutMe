@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	background-color: lightgrey;
 }
 .wrapper{
 	width: 75%;
@@ -48,9 +49,17 @@ a{
 	/* text-align: center; */
 }
 
-@media all and (max-width: 481px){
+@media all and (max-width: 680px){
 	.picture{
 		height: 0;
+		margin: 0;
+	}
+
+	.block{
+		min-width: 300px;
+	}
+	.navbar{
+		min-width: 300px;
 	}
 
 }
@@ -58,6 +67,7 @@ a{
 @media all and (min-width: 482px) and (max-width: 992px){
 	.picture{
 		background-repeat: no-repeat;
+		margin-left: 35%;
 		/* padding-left: 50%; */
 	}
 }

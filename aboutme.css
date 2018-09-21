@@ -1,102 +1,82 @@
 *{
-  padding: 0;
-  margin: 0;
-}
-
-.wrapper{
-  border: 2px solid green;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+	margin: 0;
+	padding: 0;
+	background-color: lightgrey;
 }
 
 .navbar{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	text-decoration: none !important;
-grid-column: 1/4;
+  /* margin-left: 10%; */
+  text-align: center;
 }
 
 a{
   text-decoration: none;
 }
 
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width:100%;
+}
+
 .block{
-  margin: 20px;
-  padding-left: 20%;
-  padding-right: 10%;
-  text-align: center;
-}
-
-.a{
-grid-column: 1/2;
-}
-
-.b{
-  grid-column: 2/3;
-}
-
-.c{
-  grid-column: 3/4;
+  border: 2px solid green;
+  padding: 10%;
+  margin: 10%;
 }
 
 @media all and (min-width: 482px) and (max-width: 992px){
-
-.wrapper2{
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-.a{
-grid-column: 1/2;
-}
-
-.b{
-  grid-column: 2/3;
-}
-
-.c{
-  grid-column: 3/4;
-}
   .block{
-    margin: 20px;
-    /* padding-left: 20%; */
-    /* padding-right: 10%; */
-    text-align: left;
-    /* min-width: 35%; */
+    min width: 400px;
+
   }
-}
-
-@media all and (max-width: 481px){
-
-.wrapper2{
-text-align: center;
-  display: inline;
-  max-height: 50%;
+  .a{
+    grid-column: 2/3;
   }
-
-.block{
-  /* margin: 20px; */
-  padding-left: 10%;
-  padding-right: 10%;
-  text-align: left;
-  min-width: 200px;
-  max-height: 200px;
-}
-.a{
-  grid-column: 1/4;
-  min-width: 360px;
-
-}
-
   .b{
-    grid-column: 1/4;
-    min-width: 360px;
-
+      grid-column: 2/3;
   }
   .c{
-    grid-column: 1/4;
-    min-width: 360px;
-
+  grid-column: 2/3;
   }
+  .a p{
+    min-width: 200px;
+  }
+  .b p{
+    min-width: 200px;
+  }
+  .c p{
+    min-width: 200px;
+  }
+}
+
+@media all and (max-width:482px){
+.block{
+  min width: 400px:
+
+}
+.a{
+  grid-column: 2/3;
+  min-width: 250px;
+}
+.b{
+    grid-column: 2/3;
+    min-width: 250px;
+}
+.c{
+grid-column: 2/3;
+min-width: 250px;
+}
+.a p{
+  min-width: 200px;
+}
+.b p{
+  min-width: 200px;
+}
+.c p{
+  min-width: 200px;
+}
 }
